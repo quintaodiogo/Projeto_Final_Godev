@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 const Cards = ({ item, handleClick }) => {
-  const { title, author, price, img, categorie } = item;
+  const { title, author, price, img,categories} = item;
+  function Recomendacao(){
+    const categoria = categories;
+  }
   return (
     <div className="cards">
       <div className="image_box">

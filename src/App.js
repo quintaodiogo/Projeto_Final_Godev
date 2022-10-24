@@ -9,6 +9,7 @@ import Footer from './Components/Footer/Footer';
 import Cart from './Pages/Carrinho/cart';
 import Amazon from './Components/amazon';
 import Acessorios from './Components/Acessórios/acessorios';
+import Clothes from './Components/Roupas/clothes';
 function App() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   const [show, setShow] = useState(true);
@@ -45,7 +46,7 @@ function App() {
           <Navbar handleClick={handleClick} setShow={setShow} size={cart.length} />
           <Menu setShow={setShow} size={cart.length} handleChange={handleChange} />
           {show ? (
-            <Amazon handleClick={handleClick} />
+            <Clothes handleClick={handleClick} />
           ) : (
             <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
           )}

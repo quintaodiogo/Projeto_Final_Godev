@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.box0 {
+    text-align: center;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.fisica {
+    width: 300px;
+}
+
+.juridica {
+    width: 300px;
+}
+
+.endereco {
+    width: 300px;
+}
+
+.subTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.body-login label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.body-login input {
+    width: 240px;
+}
+
+.body-login input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.1),
+        0 2px 6px 2px rgba(60, 64, 67, 0.1);
+}
+
+.body-login input[type="radio"] {
+    margin: 0px 10px 15px 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.body-login p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.bt {
+    background-color: rgb(23, 175, 235);
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.bt:hover {
+    background-color: rgb(77, 190, 235);
+    border: 2px solid #3E445B;
+    border-radius: 5px;
+    color: #fff;
+}

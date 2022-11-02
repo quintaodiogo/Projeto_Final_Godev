@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Cards = ({ item, handleClick }) => {
   const { title, author, price, img, id } = item;
   return (
-    <Link key={id} to={`/Product/${id}`}>
+    // <Link key={id} to={`/Product/${id}`}>
       <div className="cards">
         <div className="image_box">
           <img src={img} />
@@ -15,7 +15,7 @@ const Cards = ({ item, handleClick }) => {
           <button onClick={() => handleClick(item)}>Add to Cart</button>
         </div>
       </div>
-    </Link>
+    // </Link>
   );
 };
 

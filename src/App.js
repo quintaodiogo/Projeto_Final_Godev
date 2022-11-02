@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Cadastro from './Pages/Cadastro/cadastro';
 import Login from './Pages/Login/Login';
 import Navbar from './Components/navbar';
@@ -10,6 +10,7 @@ import Cart from './Pages/Carrinho/cart';
 import Amazon from './Components/amazon';
 import Acessorios from './Components/Acessórios/acessorios';
 import Clothes from './Components/Roupas/clothes';
+import Product from './Components/Produto/product';
 function App() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
   const [show, setShow] = useState(true);
@@ -36,6 +37,30 @@ function App() {
           {show ? <Slideshow handleClick={handleClick} /> : <a />}
           {show ? (
             <Amazon handleClick={handleClick} />
+          ) : (
+            <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+          )}
+          <Footer />
+        </>
+        } />
+        <Route path='Product' element={<>
+          <Navbar handleClick={handleClick} setShow={setShow} size={cart.length} />
+          <Menu setShow={setShow} size={cart.length} handleChange={handleChange} />
+          {show ? <Slideshow handleClick={handleClick} /> : <a />}
+          {show ? (
+            <Product handleClick={handleClick} />
+          ) : (
+            <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+          )}
+          <Footer />
+        </>
+        } />
+        <Route path=':Id' element={<>
+          <Navbar handleClick={handleClick} setShow={setShow} size={cart.length} />
+          <Menu setShow={setShow} size={cart.length} handleChange={handleChange} />
+          {show ? <Slideshow handleClick={handleClick} /> : <a />}
+          {show ? (
+            <Product handleClick={handleClick} />
           ) : (
             <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
           )}
@@ -77,6 +102,16 @@ function App() {
           <Menu setShow={setShow} size={cart.length} handleChange={handleChange} />
           {show ? (
             <Login handleClick={handleClick} />
+          ) : (
+            <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
+          )}
+          <Footer />
+        </>} />
+        <Route path='/Product' element={<>
+          <Navbar handleClick={handleClick} setShow={setShow} size={cart.length} />
+          <Menu setShow={setShow} size={cart.length} handleChange={handleChange} />
+          {show ? (
+            <Product handleClick={handleClick} />
           ) : (
             <Cart cart={cart} setCart={setCart} handleChange={handleChange} />
           )}

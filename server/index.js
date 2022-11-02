@@ -1,6 +1,6 @@
 const express = require("express");
-const accountSid = "{YOUR ACCESS TOKEN}";
-const authToken = "{YOUR ACCESS TOKEN}";
+const accountSid = "{-}";
+const authToken = "{-}";
 const client = require("twilio")(accountSid, authToken);
 const app = express();
 const cors = require("cors");
@@ -102,7 +102,7 @@ function sendTextMessage(id, price, title, total, qtd) {
     .create({
       body: body,
       from: "whatsapp:+14155238886",
-      to: "whatsapp:+556293775950",
+      to: "whatsapp:+5562996405596",
     })
     .then((message) => console.log(message.sid))
     .done();

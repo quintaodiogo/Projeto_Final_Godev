@@ -6,9 +6,10 @@ export default function Login() {
       <header>
         <div className="container_login">
         <div className="tittle-login">
-          <h2>Login</h2>
+          <h3>INICIE SESSÃO</h3>
         </div>
         <div className="body-login">
+          <div className='body-email'>
           <h4>Email</h4>
           <input
             type="text"
@@ -17,6 +18,8 @@ export default function Login() {
             placeholder="Digite seu email"
             maxLength={32}
           />
+          </div>
+          <div className='body-senha'>
           <h4>Senha</h4>
           <input
             type="text"
@@ -26,6 +29,7 @@ export default function Login() {
             placeholder="Digite sua senha"
           />
         </div>
+          </div>
         <div className="bottom-login">
           <div className="button-login">
             <Link to='/'><button>Entrar</button></Link>

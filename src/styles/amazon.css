@@ -79,7 +79,7 @@ section {
   background-color: #082c09
 }
 
-@media(max-width:1030px) {
+@media(max-width:1240px) {
   section {
 
     width: 80%;
@@ -91,7 +91,7 @@ section {
   }
 }
 
-@media(max-width:840px) {
+@media(max-width:800px) {
   section {
 
     width: 80%;

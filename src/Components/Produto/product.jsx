@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import list,{ getPost } from "../../data";
 import Cards from "../card";
-export default function Product({ handleClick}) {
+export default function Product({ handleClick,item}) {
   let params = useParams();
   let post = getPost(parseInt(params.Id, 10));
   const categorie= post.categories;

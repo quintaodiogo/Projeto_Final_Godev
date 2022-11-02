@@ -17,9 +17,7 @@ export default function Product({ handleClick}) {
           <h3>{post.price}</h3>
           <h2>{post.title}</h2>
         </div>
-        <div className="button">
-          <button>Select</button>
-        </div>
+        <button onClick={() => handleClick(item)}>Add to Cart</button>
       </div>
     </div>
     <div>
